@@ -92,6 +92,12 @@ body{overflow-x:hidden}
 .busca input,.busca select{font:inherit;border:1px solid var(--linha);background:var(--cartao);color:var(--tinta);border-radius:12px;padding:11px 14px}
 .busca input{flex:1;min-width:0}
 .busca select{flex:none;max-width:44%}
+.guias .miolo{display:flex;gap:8px;overflow-x:auto;padding-top:14px;padding-bottom:4px;scrollbar-width:none}
+.guias .miolo::-webkit-scrollbar{display:none}
+.guia{flex:none;padding:9px 16px;border-radius:999px;background:var(--noite);color:var(--ouro-claro);font-weight:700;
+  text-decoration:none;border:1px solid var(--ouro);white-space:nowrap}
+.guia:first-child{background:var(--ouro);color:var(--noite)}
+.guia:hover,.guia:focus-visible{filter:brightness(1.1)}
 .chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:none;border:1px solid var(--linha);background:var(--cartao);color:var(--tinta);border-radius:999px;padding:7px 14px;
@@ -161,6 +167,10 @@ body{overflow-x:hidden}
   </div>
 </section>
 
+<nav class="guias" aria-label="Listas especiais">
+  <div class="miolo"><a class="guia" href="black-friday/">Black Friday 2026</a><a class="guia" href="presentes-de-natal-ate-50-reais/">Presentes até R$ 50</a><a class="guia" href="presentes-de-natal-ate-100-reais/">Presentes até R$ 100</a><a class="guia" href="presentes-de-natal-ate-200-reais/">Presentes até R$ 200</a><a class="guia" href="ofertas-ate-30-reais/">Achadinhos até R$ 30</a></div>
+</nav>
+
 <nav class="barra" aria-label="Filtrar ofertas">
   <div class="miolo">
     <div class="busca">
@@ -201,7 +211,7 @@ body{overflow-x:hidden}
 <footer class="rodape">
   <div class="miolo">
     <p>Link de afiliado: posso ganhar comissão, sem custo extra para você. Preço sujeito a alteração.</p>
-    <p>Como Associado da Amazon, eu ganho com compras qualificadas. Os preços foram vistos em 21/11/2026 às 08h44 e podem mudar na loja. Compra, entrega e troca são feitas pela própria loja.</p>
+    <p>Como Associado da Amazon, eu ganho com compras qualificadas. Os preços foram vistos em 21/11/2026 às 09h05 e podem mudar na loja. Compra, entrega e troca são feitas pela própria loja.</p>
     <p>Instagram <a href="https://www.instagram.com/precodorei/">@precodorei</a> e Telegram <a href="https://t.me/precodorei">t.me/precodorei</a>.</p>
     <nav aria-label="Ofertas por categoria"><p>Ofertas por categoria: <a href="casa-e-cozinha/">Casa e cozinha</a> · <a href="tecnologia/">Tecnologia</a> · <a href="ferramentas/">Ferramentas</a> · <a href="beleza/">Beleza</a> · <a href="pets/">Pets</a> · <a href="bebe-e-crianca/">Bebê e criança</a> · <a href="moda-e-esporte/">Moda e esporte</a></p></nav>
   </div>
